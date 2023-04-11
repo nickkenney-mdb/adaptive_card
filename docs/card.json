@@ -1,0 +1,114 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Plugin: Trivy Vulnerability Report",
+                    "size": "large",
+                    "weight": "bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Image: **$PLUGIN_IMAGE** ",
+                    "isSubtle": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Critical",
+                                    "color": "attention",
+                                    "horizontalAlignment": "center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "$CRITICAL",
+                                    "color": "attention",
+                                    "spacing": "small",
+                                    "horizontalAlignment": "center"
+                                }
+                            ],
+                            "verticalContentAlignment": "center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "High",
+                                    "color": "warning",
+                                    "horizontalAlignment": "center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "$HIGH",
+                                    "color": "warning",
+                                    "spacing": "small",
+                                    "horizontalAlignment": "center"
+                                }
+                            ],
+                            "verticalContentAlignment": "center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Medium",
+                                    "color": "accent",
+                                    "horizontalAlignment": "center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "$MEDIUM",
+                                    "color": "accent",
+                                    "spacing": "small",
+                                    "horizontalAlignment": "center"
+                                }
+                            ],
+                            "verticalContentAlignment": "center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Low",
+                                    "color": "good",
+                                    "horizontalAlignment": "center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "$LOW",
+                                    "color": "good",
+                                    "spacing": "small",
+                                    "horizontalAlignment": "center"
+                                }
+                            ],
+                            "verticalContentAlignment": "center"
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "The table above shows the number and severity of vulnerabilities found using Trivy.\n\n To get the full results, scan your container locally Trivy. \n\nhttps://github.com/aquasecurity/trivy#quick-start",
+                    "wrap": true
+                }
+            ],
+            "style": "emphasis"
+        }
+    ]
+}
