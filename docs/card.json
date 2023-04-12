@@ -32,7 +32,7 @@
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${CRITICAL}",
+                                    "text": " ${CRITICAL} ",
                                     "color": "attention",
                                     "spacing": "small",
                                     "horizontalAlignment": "center"
@@ -52,7 +52,7 @@
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${HIGH}",
+                                    "text": " ${HIGH} ",
                                     "color": "warning",
                                     "spacing": "small",
                                     "horizontalAlignment": "center"
@@ -72,7 +72,7 @@
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${MEDIUM}",
+                                    "text": " ${MEDIUM} ",
                                     "color": "accent",
                                     "spacing": "small",
                                     "horizontalAlignment": "center"
@@ -92,7 +92,7 @@
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": "${LOW}",
+                                    "text": " ${LOW} ",
                                     "color": "good",
                                     "spacing": "small",
                                     "horizontalAlignment": "center"
