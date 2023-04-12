@@ -14,7 +14,7 @@
                 },
                 {
                     "type": "TextBlock",
-                    "text": "Image: **$PLUGIN_IMAGE** ",
+                    "text": "Image: PLUGIN_IMAGE ",
                     "isSubtle": true
                 },
                 {
