@@ -14,7 +14,7 @@
                 },
                 {
                     "type": "TextBlock",
-                    "text": "${IMAGE}",
+                    "text": "${SUBTITLE}",
                     "isSubtle": true
                 },
                 {
