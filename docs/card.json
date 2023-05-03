@@ -9,13 +9,14 @@
                 {
                     "type": "TextBlock",
                     "text": "Plugin: Trivy Vulnerability Report",
-                    "size": "large",
-                    "weight": "bolder"
+                    "size": "Large",
+                    "weight": "Bolder"
                 },
                 {
                     "type": "TextBlock",
                     "text": "${SUBTITLE}",
-                    "isSubtle": true
+                    "isSubtle": true,
+                    "horizontalAlignment": "Center"
                 },
                 {
                     "type": "ColumnSet",
@@ -27,18 +28,18 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "Critical",
-                                    "color": "attention",
-                                    "horizontalAlignment": "center"
+                                    "color": "Attention",
+                                    "horizontalAlignment": "Center"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": " ${CRITICAL} ",
-                                    "color": "attention",
-                                    "spacing": "small",
-                                    "horizontalAlignment": "center"
+                                    "text": " ${CRITICAL_COUNT} ",
+                                    "color": "Attention",
+                                    "spacing": "Small",
+                                    "horizontalAlignment": "Center"
                                 }
                             ],
-                            "verticalContentAlignment": "center"
+                            "verticalContentAlignment": "Center"
                         },
                         {
                             "type": "Column",
@@ -47,18 +48,18 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "High",
-                                    "color": "warning",
-                                    "horizontalAlignment": "center"
+                                    "color": "Warning",
+                                    "horizontalAlignment": "Center"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": " ${HIGH} ",
-                                    "color": "warning",
-                                    "spacing": "small",
-                                    "horizontalAlignment": "center"
+                                    "text": " ${HIGH_COUNT} ",
+                                    "color": "Warning",
+                                    "spacing": "Small",
+                                    "horizontalAlignment": "Center"
                                 }
                             ],
-                            "verticalContentAlignment": "center"
+                            "verticalContentAlignment": "Center"
                         },
                         {
                             "type": "Column",
@@ -67,18 +68,18 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "Medium",
-                                    "color": "accent",
-                                    "horizontalAlignment": "center"
+                                    "color": "Accent",
+                                    "horizontalAlignment": "Center"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": " ${MEDIUM} ",
-                                    "color": "accent",
-                                    "spacing": "small",
-                                    "horizontalAlignment": "center"
+                                    "text": " ${MEDIUM_COUNT} ",
+                                    "color": "Accent",
+                                    "spacing": "Small",
+                                    "horizontalAlignment": "Center"
                                 }
                             ],
-                            "verticalContentAlignment": "center"
+                            "verticalContentAlignment": "Center"
                         },
                         {
                             "type": "Column",
@@ -87,25 +88,44 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "Low",
-                                    "color": "good",
-                                    "horizontalAlignment": "center"
+                                    "color": "Good",
+                                    "horizontalAlignment": "Center"
                                 },
                                 {
                                     "type": "TextBlock",
-                                    "text": " ${LOW} ",
-                                    "color": "good",
-                                    "spacing": "small",
-                                    "horizontalAlignment": "center"
+                                    "text": " ${LOW_COUNT} ",
+                                    "color": "Good",
+                                    "spacing": "Small",
+                                    "horizontalAlignment": "Center"
                                 }
                             ],
-                            "verticalContentAlignment": "center"
+                            "verticalContentAlignment": "Center"
                         }
                     ]
                 },
                 {
                     "type": "TextBlock",
-                    "text": "The table above shows the number and severity of vulnerabilities found using Trivy.\n\n To get the full results, scan your container locally Trivy. \n\nhttps://github.com/aquasecurity/trivy#quick-start",
-                    "wrap": true
+                    "text": "${CRITICAL_FINDINGS}",
+                    "wrap": true,
+                    "spacing": "ExtraLarge"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${HIGH_FINDINGS}",
+                    "wrap": true,
+                    "spacing": "ExtraLarge"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${MEDIUM_FINDINGS}",
+                    "wrap": true,
+                    "spacing": "ExtraLarge"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "To get the full results, scan your container locally using Trivy. \n\nhttps://github.com/aquasecurity/trivy#quick-start",
+                    "wrap": true,
+                    "spacing": "ExtraLarge"
                 }
             ],
             "style": "emphasis"
