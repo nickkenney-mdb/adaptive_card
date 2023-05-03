@@ -125,7 +125,7 @@
                 },
                 {
                     "type": "TextBlock",
-                    "text": "To get the full results, scan your container locally using Trivy. \n\nhttps://github.com/aquasecurity/trivy#quick-start",
+                    "text": "This report only displays Medium and above findings.\n\n To get the full results, review the build log or run the plugin locally.",
                     "wrap": true,
                     "spacing": "ExtraLarge"
                 }
