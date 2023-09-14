@@ -10,8 +10,7 @@
                     "type": "TextBlock",
                     "text": "Plugin: Trivy Vulnerability Report",
                     "size": "Large",
-                    "weight": "Bolder",
-                    "horizontalAlignment": "Center"
+                    "weight": "Bolder"
                 },
                 {
                     "type": "TextBlock",
@@ -102,8 +101,6 @@
                             ],
                             "verticalContentAlignment": "Center"
                         }
-                    ],
-                    "horizontalAlignment": "Center"
                 },
                 {
                     "type": "TextBlock",
